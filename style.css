@@ -177,6 +177,36 @@ p {
   padding: 1rem;
 }
 
+.numbers button {
+  border-radius: 7px;
+  border: none;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.533333px;
+}
+
+.key, .operator {
+  background-color: var(--key-bg);
+  color: var(--key-col);
+  box-shadow: 0 3px var(--key-shadow);
+  text-align: center;
+  padding: 0.5em 1em;
+}
+
+.key:focus, .key:hover,
+.operator:focus , .operator:hover {
+  box-shadow: none;
+  transform: translateY(3.5px);
+}
+
+#delete, #reset-key {
+  background-color: var(--key-accent-bg);
+  color: var(--key-eq-col);
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
 
 
 
