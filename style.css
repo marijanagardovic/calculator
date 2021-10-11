@@ -319,6 +319,11 @@ p {
   .key, .operator {
     padding: 0.2em 0.4em;
   }
+
+  .numbers button {
+    font-size: 25px;
+  }
+
 }
 
 
