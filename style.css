@@ -20,7 +20,7 @@
     --key-accent-shadow-active: hsl(224, 28%, 35%);
     --key-eq-bg-active: hsl(6, 63%, 42%);
     --key-eq-shadow-active: hsl(6, 70%, 34%);
-    --attribution-col: white;
+    --white: white;
 
     --font-size: 32px;
     --ffamily: 'Spartan';
@@ -47,7 +47,6 @@ html[data-theme="light"] {
     --key-accent-shadow-active: hsl(185, 58%, 25%);
     --key-eq-bg-active: hsl(25, 100%, 31%);
     --key-eq-shadow-active: hsl(25, 99%, 27%);
-    --attribution-col: black;
   }
   
   html[data-theme="dark"] {
@@ -71,7 +70,6 @@ html[data-theme="light"] {
     --key-accent-shadow-active: hsl(285, 91%, 52%);
     --key-eq-bg-active: hsl(176, 94%, 38%);
     --key-eq-shadow-active: hsl(177, 92%, 70%);
-    --attribution-col: white;
 } 
 
 * {
@@ -105,7 +103,7 @@ p {
 }
 
 .title, p, .themes, .result {
-  color: var(--attribution-col);
+  color: var(--white);
 }
 
 .themes-title {
@@ -183,6 +181,7 @@ p {
   font-size: 32px;
   line-height: 36px;
   letter-spacing: -0.533333px;
+  font-weight: 700;
 }
 
 .key, .operator {
@@ -190,22 +189,137 @@ p {
   color: var(--key-col);
   box-shadow: 0 3px var(--key-shadow);
   text-align: center;
-  padding: 0.5em 1em;
+  padding: 0.4em 0.8em;
 }
 
 .key:focus, .key:hover,
 .operator:focus , .operator:hover {
   box-shadow: none;
-  transform: translateY(3.5px);
+  transform: translateY(3px);
 }
 
 #delete, #reset-key {
   background-color: var(--key-accent-bg);
-  color: var(--key-eq-col);
+  color: var(--white);
   text-transform: uppercase;
   font-size: 20px;
+  box-shadow: 0 3px var(--key-accent-shadow-active);
 }
 
+#reset-key {
+  grid-column: 1 / span 2;
+}
+
+#equals-key {
+  grid-column: 3 / span 2;
+  box-shadow: 0 5px var(--key-eq-shadow);
+  background-color: var(--key-eq-bg);
+  color: var(--white);
+  box-shadow: 0 3px var(--key-eq-shadow);
+}
+
+#reset-key:focus, #reset-key:hover {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+#equals-key:focus, #equals-key:hover {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+#delete:focus, #delete:hover {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-bg: hsl(0, 0%, 90%);
+    --screen-bg: hsl(0, 0%, 93%);
+    --keypad-bg: hsl(0, 5%, 81%);
+    --key-bg: hsl(45, 7%, 89%);
+    --key-shadow: hsl(35, 11%, 61%);
+    --key-col: hsl(60, 10%, 19%);
+    --key-accent-bg: hsl(185, 42%, 37%);
+    --key-accent-shadow: hsl(185, 58%, 25%);
+    --key-accent-col: white;
+    --key-eq-bg: hsl(25, 98%, 40%);
+    --key-eq-shadow: hsl(25, 99%, 27%);
+    --key-eq-col: white;
+    --head-col: hsl(60, 10%, 19%);
+  
+    --key-bg-active: hsl(0, 0%, 78%);
+    --key-shadow-active: hsl(35, 11%, 61%);
+    --key-accent-bg-active: hsl(185, 42%, 31%);
+    --key-accent-shadow-active: hsl(185, 58%, 25%);
+    --key-eq-bg-active: hsl(25, 100%, 31%);
+    --key-eq-shadow-active: hsl(25, 99%, 27%);
+  }
+
+  #light {
+    background-color: var(--key-eq-bg);
+  }
+
+  #dark, #default {
+    background-color: inherit;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg: hsl(268, 75%, 9%);
+    --screen-bg: hsl(268, 71%, 12%);
+    --keypad-bg: hsl(268, 71%, 12%);
+    --key-bg: hsl(268, 47%, 21%);
+    --key-shadow: hsl(290, 70%, 36%);
+    --key-col: hsl(52, 100%, 62%);
+    --key-accent-bg: hsl(281, 89%, 26%);
+    --key-accent-shadow: hsl(285, 91%, 52%);
+    --key-accent-col: white;
+    --key-eq-bg: hsl(176, 100%, 44%);
+    --key-eq-shadow: hsl(177, 92%, 70%);
+    --key-eq-col: hsl(198, 20%, 13%);
+    --head-col: hsl(52, 100%, 62%);
+  
+    --key-bg-active: hsl(268, 46%, 18%);
+    --key-shadow-active: hsl(290, 70%, 36%);
+    --key-accent-bg-active: hsl(281, 89%, 21%);
+    --key-accent-shadow-active: hsl(285, 91%, 52%);
+    --key-eq-bg-active: hsl(176, 94%, 38%);
+    --key-eq-shadow-active: hsl(177, 92%, 70%);
+  }
+
+  #dark {
+    background-color: var(--key-eq-bg);
+  }
+
+  #deafult, #light {
+    background-color: inherit;
+  }
+}
+
+@media (max-width: 1075px) {
+  main {
+    width: 60%;
+  }
+}
+
+@media (max-width: 691px) {
+  main {
+    width: 85%;
+  }
+}
+
+@media (max-width: 460px) {
+  main {
+    width: 98%;
+  }
+
+  .key, .operator {
+    padding: 0.2em 0.4em;
+  }
+}
 
 
 
