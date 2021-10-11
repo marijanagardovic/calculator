@@ -112,6 +112,10 @@ p {
   align-items: flex-end;
 }
 
+.themes-title p {
+  text-transform: uppercase;
+}
+
 .themes {
   display: block;
 }
