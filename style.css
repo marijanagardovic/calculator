@@ -1,44 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 :root {
-    /* first theme */
-    --main-background-1:  hsl(222, 26%, 31%);
-    --keypad-background-1: hsl(223, 31%, 20%);
-    --screen-background-1: hsl(224, 36%, 15%);
-    --key-background-1: hsl(225, 21%, 49%);
-    --key-shadow-1:  hsl(224, 28%, 35%);
-    --red-key: hsl(6, 63%, 50%);
-    --dark-red:  hsl(6, 70%, 34%);
-    --light-grayish-orange: hsl(30, 25%, 89%);
-    --grayish-orange: hsl(28, 16%, 65%);
-    --very-dark-grayish-blue: hsl(221, 14%, 31%);
-    --white: hsl(0, 0, 100%);
-
-    /* second theme */
-
-    --main-background-2: hsl(0, 0%, 90%);
-    --keypad-background-2: hsl(0, 5%, 81%);
-    --screen-background-2: hsl(0, 0%, 93%);
-    --key-background-2: hsl(185, 42%, 37%);
-    --key-shadow-2:  hsl(185, 58%, 25%);    
-    --orange: hsl(25, 98%, 40%);
-    --dark-orange:  hsl(25, 99%, 27%);
-    --light-grayish-yellow: hsl(45, 7%, 89%);
-    --dark-grayish-orange:  hsl(35, 11%, 61%);
-    --very-dark-grayish-yellow: hsl(60, 10%, 19%);
-
-    /* third theme */
-
-    --main-background-3: hsl(268, 75%, 9%);
-    --keypad-background-3: hsl(268, 71%, 12%);
-    --key-background-3: hsl(281, 89%, 26%);
-    --key-shadow-3:  hsl(285, 91%, 52%);    
-    --cyan:  hsl(176, 100%, 44%);
-    --soft-cyan: hsl(177, 92%, 70%);
-    --very-dark-violet: hsl(268, 47%, 21%);
-    --dark-magenta:  hsl(290, 70%, 36%);
-    --light-yellow: hsl(52, 100%, 62%);
-    --very-dark-yellow: hsl(198, 20%, 13%);
-
     --font-size: 32px;
     --ffamily: 'Spartan';
+}
+
+html[data-mytheme="dark"] {
+    --main-bg: hsl(222, 26%, 31%);
+    --screen-bg: hsl(224, 36%, 15%);
+    --keypad-bg: hsl(223, 31%, 20%);
+    --key-bg: hsl(30, 25%, 89%);
+    --key-shadow: hsl(28, 16%, 65%);
+    --key-col: hsl(221, 14%, 31%);
+    --key-accent-bg: hsl(225, 21%, 49%);
+    --key-accent-shadow: hsl(224, 28%, 35%);
+    --key-accent-col: white;
+    --key-eq-bg: hsl(6, 63%, 50%);
+    --key-eq-shadow: hsl(6, 70%, 34%);
+    --key-eq-col: white;
+    --head-col: white;
+  
+    --key-bg-active: rgb(206, 206, 206);
+    --key-shadow-active: hsl(28, 16%, 65%);
+    --key-accent-bg-active: hsl(224, 22%, 38%);
+    --key-accent-shadow-active: hsl(224, 28%, 35%);
+    --key-eq-bg-active: hsl(6, 63%, 42%);
+    --key-eq-shadow-active: hsl(6, 70%, 34%);
+    --attribution-col: white;
+  }
+  
+  html[data-mytheme="light"] {
+    --main-bg: hsl(0, 0%, 90%);
+    --screen-bg: hsl(0, 0%, 93%);
+    --keypad-bg: hsl(0, 5%, 81%);
+    --key-bg: hsl(45, 7%, 89%);
+    --key-shadow: hsl(35, 11%, 61%);
+    --key-col: hsl(60, 10%, 19%);
+    --key-accent-bg: hsl(185, 42%, 37%);
+    --key-accent-shadow: hsl(185, 58%, 25%);
+    --key-accent-col: white;
+    --key-eq-bg: hsl(25, 98%, 40%);
+    --key-eq-shadow: hsl(25, 99%, 27%);
+    --key-eq-col: white;
+    --head-col: hsl(60, 10%, 19%);
+  
+    --key-bg-active: hsl(0, 0%, 78%);
+    --key-shadow-active: hsl(35, 11%, 61%);
+    --key-accent-bg-active: hsl(185, 42%, 31%);
+    --key-accent-shadow-active: hsl(185, 58%, 25%);
+    --key-eq-bg-active: hsl(25, 100%, 31%);
+    --key-eq-shadow-active: hsl(25, 99%, 27%);
+    --attribution-col: black;
+  }
+  
+  html[data-mytheme="purple"] {
+    --main-bg: hsl(268, 75%, 9%);
+    --screen-bg: hsl(268, 71%, 12%);
+    --keypad-bg: hsl(268, 71%, 12%);
+    --key-bg: hsl(268, 47%, 21%);
+    --key-shadow: hsl(290, 70%, 36%);
+    --key-col: hsl(52, 100%, 62%);
+    --key-accent-bg: hsl(281, 89%, 26%);
+    --key-accent-shadow: hsl(285, 91%, 52%);
+    --key-accent-col: white;
+    --key-eq-bg: hsl(176, 100%, 44%);
+    --key-eq-shadow: hsl(177, 92%, 70%);
+    --key-eq-col: hsl(198, 20%, 13%);
+    --head-col: hsl(52, 100%, 62%);
+  
+    --key-bg-active: hsl(268, 46%, 18%);
+    --key-shadow-active: hsl(290, 70%, 36%);
+    --key-accent-bg-active: hsl(281, 89%, 21%);
+    --key-accent-shadow-active: hsl(285, 91%, 52%);
+    --key-eq-bg-active: hsl(176, 94%, 38%);
+    --key-eq-shadow-active: hsl(177, 92%, 70%);
+    --attribution-col: white;
 }
