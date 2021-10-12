@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
-:root, html[data-theme="deafult"] {
+:root, html[data-theme="default"] {
     --main-bg: hsl(222, 26%, 31%);
     --screen-bg: hsl(224, 36%, 15%);
     --keypad-bg: hsl(223, 31%, 20%);
@@ -21,9 +21,6 @@
     --key-eq-bg-active: hsl(6, 63%, 42%);
     --key-eq-shadow-active: hsl(6, 70%, 34%);
     --white: white;
-
-    --font-size: 32px;
-    --ffamily: 'Spartan';
   }
   
 html[data-theme="light"] {
@@ -80,7 +77,7 @@ html[data-theme="light"] {
 
 body {
   background-color: var(--main-bg);
-  font-family: var(--ffamily);
+  font-family: 'Spartan';
 }
 
 main {
@@ -236,6 +233,9 @@ p {
 #delete:focus, #delete:hover {
   box-shadow: none;
   transform: translateY(3px);
+}
+.themes button:hover {
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: light) {
