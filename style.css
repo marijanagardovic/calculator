@@ -100,7 +100,7 @@ p {
 }
 
 .title, p, .themes, .result {
-  color: var(--white);
+  color: var(--head-col);
 }
 
 .themes-title {
