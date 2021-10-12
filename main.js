@@ -30,7 +30,6 @@ delKey.addEventListener('click', () => {
 
     if(screenNum != 0) {
         let temp = screenNum.toString();
-        console.log(temp)
         if(temp.length == 1){
             screenNum = 0;
         }
@@ -42,7 +41,6 @@ delKey.addEventListener('click', () => {
             temp = splitJoin(temp);
             temp = temp.toString().replace(/\,/g,'');
             screenNum = parseInt(temp).toLocaleString('en-US');
-            console.log(temp)
         }
     } 
     screen.innerHTML = screenNum;
