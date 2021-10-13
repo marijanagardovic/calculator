@@ -13,13 +13,8 @@
     --key-eq-shadow: hsl(6, 70%, 34%);
     --key-eq-col: white;
     --head-col: white;
-  
-    --key-bg-active: rgb(206, 206, 206);
-    --key-shadow-active: hsl(28, 16%, 65%);
     --key-accent-bg-active: hsl(224, 22%, 38%);
     --key-accent-shadow-active: hsl(224, 28%, 35%);
-    --key-eq-bg-active: hsl(6, 63%, 42%);
-    --key-eq-shadow-active: hsl(6, 70%, 34%);
     --white: white;
   }
   
@@ -38,12 +33,6 @@ html[data-theme="light"] {
     --key-eq-col: white;
     --head-col: hsl(60, 10%, 19%);
   
-    --key-bg-active: hsl(0, 0%, 78%);
-    --key-shadow-active: hsl(35, 11%, 61%);
-    --key-accent-bg-active: hsl(185, 42%, 31%);
-    --key-accent-shadow-active: hsl(185, 58%, 25%);
-    --key-eq-bg-active: hsl(25, 100%, 31%);
-    --key-eq-shadow-active: hsl(25, 99%, 27%);
   }
   
   html[data-theme="dark"] {
@@ -60,13 +49,6 @@ html[data-theme="light"] {
     --key-eq-shadow: hsl(177, 92%, 70%);
     --key-eq-col: hsl(198, 20%, 13%);
     --head-col: hsl(52, 100%, 62%);
-  
-    --key-bg-active: hsl(268, 46%, 18%);
-    --key-shadow-active: hsl(290, 70%, 36%);
-    --key-accent-bg-active: hsl(281, 89%, 21%);
-    --key-accent-shadow-active: hsl(285, 91%, 52%);
-    --key-eq-bg-active: hsl(176, 94%, 38%);
-    --key-eq-shadow-active: hsl(177, 92%, 70%);
 } 
 
 * {
@@ -253,13 +235,7 @@ p {
     --key-eq-shadow: hsl(25, 99%, 27%);
     --key-eq-col: white;
     --head-col: hsl(60, 10%, 19%);
-  
-    --key-bg-active: hsl(0, 0%, 78%);
-    --key-shadow-active: hsl(35, 11%, 61%);
-    --key-accent-bg-active: hsl(185, 42%, 31%);
-    --key-accent-shadow-active: hsl(185, 58%, 25%);
-    --key-eq-bg-active: hsl(25, 100%, 31%);
-    --key-eq-shadow-active: hsl(25, 99%, 27%);
+
   }
 
   #light {
@@ -286,13 +262,7 @@ p {
     --key-eq-shadow: hsl(177, 92%, 70%);
     --key-eq-col: hsl(198, 20%, 13%);
     --head-col: hsl(52, 100%, 62%);
-  
-    --key-bg-active: hsl(268, 46%, 18%);
-    --key-shadow-active: hsl(290, 70%, 36%);
-    --key-accent-bg-active: hsl(281, 89%, 21%);
-    --key-accent-shadow-active: hsl(285, 91%, 52%);
-    --key-eq-bg-active: hsl(176, 94%, 38%);
-    --key-eq-shadow-active: hsl(177, 92%, 70%);
+
   }
 
   #dark {
