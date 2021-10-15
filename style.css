@@ -16,6 +16,7 @@
     --key-accent-bg-active: hsl(224, 22%, 38%);
     --key-accent-shadow-active: hsl(224, 28%, 35%);
     --white: white;
+    --white--accent: white;
   }
   
 html[data-theme="light"] {
@@ -32,7 +33,7 @@ html[data-theme="light"] {
     --key-eq-shadow: hsl(25, 99%, 27%);
     --key-eq-col: white;
     --head-col: hsl(60, 10%, 19%);
-  
+    --white--accent: white;
   }
   
   html[data-theme="dark"] {
@@ -49,6 +50,7 @@ html[data-theme="light"] {
     --key-eq-shadow: hsl(177, 92%, 70%);
     --key-eq-col: hsl(198, 20%, 13%);
     --head-col: hsl(52, 100%, 62%);
+    --white--accent: hsl(290, 70%, 36%);
 } 
 
 * {
@@ -166,6 +168,11 @@ p {
   line-height: 36px;
   letter-spacing: -0.533333px;
   font-weight: 700;
+}
+
+.numbers button:hover {
+  cursor: pointer;
+  background-color: var(--white--accent);
 }
 
 .key, .operator {
