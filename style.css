@@ -64,7 +64,7 @@ body {
 
 main {
   margin: auto;
-  width: 40%;
+  max-width: 540px;
   padding: 2em;
 }
 
