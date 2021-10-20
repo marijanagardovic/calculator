@@ -23,7 +23,7 @@ function changeTheme(e){
 const screen = document.getElementsByClassName("result")[0];
 let screenNum = screen.innerHTML;
 let resultArr = [];
-let result=0;
+let result = 0;
 
 const delKey = document.getElementById("delete");
 delKey.addEventListener('click', () => {
@@ -81,7 +81,7 @@ function changeScreenNum(ev) {
             screenNum = parseInt(temp).toLocaleString('en-US');
         }
     
-    screen.innerHTML = screenNum;
+    screen.innerHTML = Math.round(screenNum * 100) / 100;
 }
 
 
@@ -108,7 +108,7 @@ function sum(ev){
     resultArr.push(screenNum);
     result = resultArr.join('');
     screenNum = window.eval(result);
-    screen.innerHTML = screenNum;
+    screen.innerHTML = Math.round(screenNum  * 100) / 100 ;
     resultArr = [];
     result = '';
 }
